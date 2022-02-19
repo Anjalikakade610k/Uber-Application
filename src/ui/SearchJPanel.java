@@ -57,6 +57,8 @@ public class SearchJPanel extends javax.swing.JPanel {
         txtcsno2 = new javax.swing.JTextField();
         btnsearch = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(0, 0, 0));
+
         txtcarmanuyear.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtcarmanuyearKeyReleased(evt);
@@ -64,6 +66,7 @@ public class SearchJPanel extends javax.swing.JPanel {
         });
 
         lblcarsrno.setBackground(new java.awt.Color(0, 0, 0));
+        lblcarsrno.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         lblcarsrno.setForeground(new java.awt.Color(255, 255, 255));
         lblcarsrno.setText("Cars with serial number:");
 
@@ -74,6 +77,7 @@ public class SearchJPanel extends javax.swing.JPanel {
         });
 
         lblcaravai.setBackground(new java.awt.Color(0, 0, 0));
+        lblcaravai.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         lblcaravai.setForeground(new java.awt.Color(255, 255, 255));
         lblcaravai.setText("Cars available");
 
@@ -84,6 +88,7 @@ public class SearchJPanel extends javax.swing.JPanel {
         });
 
         lblcarbrand.setBackground(new java.awt.Color(0, 0, 0));
+        lblcarbrand.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         lblcarbrand.setForeground(new java.awt.Color(255, 255, 255));
         lblcarbrand.setText("Cars made by Brand:");
 
@@ -94,6 +99,7 @@ public class SearchJPanel extends javax.swing.JPanel {
         });
 
         lblcarmanuyear.setBackground(new java.awt.Color(0, 0, 0));
+        lblcarmanuyear.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         lblcarmanuyear.setForeground(new java.awt.Color(255, 255, 255));
         lblcarmanuyear.setText("Cars manufactured in year:");
 
@@ -109,18 +115,22 @@ public class SearchJPanel extends javax.swing.JPanel {
         });
 
         lblcarmno.setBackground(new java.awt.Color(0, 0, 0));
+        lblcarmno.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         lblcarmno.setForeground(new java.awt.Color(255, 255, 255));
         lblcarmno.setText("Cars with model number:");
 
         lblcaravaicity.setBackground(new java.awt.Color(0, 0, 0));
+        lblcaravaicity.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         lblcaravaicity.setForeground(new java.awt.Color(255, 255, 255));
         lblcaravaicity.setText("Cars available in city:");
 
         lblcarseatno.setBackground(new java.awt.Color(0, 0, 0));
+        lblcarseatno.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         lblcarseatno.setForeground(new java.awt.Color(255, 255, 255));
         lblcarseatno.setText("Cars with seat count from:");
 
         lblmubyu.setBackground(new java.awt.Color(0, 0, 0));
+        lblmubyu.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 14)); // NOI18N
         lblmubyu.setForeground(new java.awt.Color(255, 255, 255));
         lblmubyu.setText("All Manufactures used by Uber:");
 
@@ -136,16 +146,32 @@ public class SearchJPanel extends javax.swing.JPanel {
         });
 
         jLabel9.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel9.setFont(new java.awt.Font("Apple SD Gothic Neo", 3, 30)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(210, 10, 9));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Search your ride here!");
 
-        tblSearch.setBackground(new java.awt.Color(51, 51, 51));
+        tblSearch.setBackground(new java.awt.Color(211, 211, 211));
+        tblSearch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tblSearch.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 12)); // NOI18N
         tblSearch.setForeground(new java.awt.Color(255, 255, 255));
         tblSearch.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
                 "Brand", "Serial Number", "Model Number", "Vehicle Insurance", "City", "Manufactured Date", "Seat Count", "Availability", "Maintenance Certificate", "Uber Type", "Entry Date", "Updation Date"
@@ -197,56 +223,62 @@ public class SearchJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(138, 138, 138)
+                                        .addComponent(lblcarsrno))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(94, 94, 94)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lblmubyu)
+                                            .addComponent(lblcarmanuyear)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(lblcarbrand)
+                                                .addComponent(lblcaravai))
+                                            .addComponent(lblcarmno)
+                                            .addComponent(lblcaravaicity)
+                                            .addComponent(lblcarseatno))))
+                                .addGap(68, 68, 68)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtcarsrno, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtcarmanuyear, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtcarmno, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtcaravaicity, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txtcsno1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblcsnoto)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtcsno2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtmubyu, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtcaravai, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtcarbrand, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(318, 318, 318)
+                                .addComponent(btnsearch)))
+                        .addGap(0, 874, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(138, 138, 138)
-                                .addComponent(lblcarsrno))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(94, 94, 94)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblmubyu)
-                                    .addComponent(lblcarmanuyear)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lblcarbrand)
-                                        .addComponent(lblcaravai))
-                                    .addComponent(lblcarmno)
-                                    .addComponent(lblcaravaicity)
-                                    .addComponent(lblcarseatno))))
-                        .addGap(68, 68, 68)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtcaravai, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtcarsrno, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtcarbrand, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtcarmanuyear, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtcarmno, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtcaravaicity, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(txtcsno1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblcsnoto)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtcsno2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtmubyu, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(258, 258, 258)
-                        .addComponent(btnsearch)))
-                .addContainerGap(952, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1)))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(396, 396, 396)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(20, 20, 20)
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addGap(30, 30, 30)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblcarsrno)
                     .addComponent(txtcarsrno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -280,8 +312,9 @@ public class SearchJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtmubyu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblmubyu))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
-                .addComponent(btnsearch))
+                .addGap(18, 18, 18)
+                .addComponent(btnsearch)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

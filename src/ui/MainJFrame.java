@@ -37,6 +37,9 @@ public class MainJFrame extends javax.swing.JFrame {
         btnView = new javax.swing.JButton();
         btnSearch = new javax.swing.JButton();
         Workarea = new javax.swing.JPanel();
+        lblUber = new javax.swing.JLabel();
+        lblwlcm = new javax.swing.JLabel();
+        lblintro = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,25 +74,28 @@ public class MainJFrame extends javax.swing.JFrame {
         ControlPanelLayout.setHorizontalGroup(
             ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ControlPanelLayout.createSequentialGroup()
-                .addGroup(ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCreate)
-                    .addComponent(btnSearch))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(ControlPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnView)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ControlPanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnSearch))
+                    .addGroup(ControlPanelLayout.createSequentialGroup()
+                        .addGroup(ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnView)
+                            .addComponent(btnCreate))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         ControlPanelLayout.setVerticalGroup(
             ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ControlPanelLayout.createSequentialGroup()
-                .addGap(160, 160, 160)
+                .addGap(240, 240, 240)
                 .addComponent(btnCreate)
-                .addGap(98, 98, 98)
+                .addGap(124, 124, 124)
                 .addComponent(btnView)
-                .addGap(100, 100, 100)
+                .addGap(108, 108, 108)
                 .addComponent(btnSearch)
-                .addContainerGap(347, Short.MAX_VALUE))
+                .addContainerGap(233, Short.MAX_VALUE))
         );
 
         SplitPane.setLeftComponent(ControlPanel);
@@ -97,15 +103,48 @@ public class MainJFrame extends javax.swing.JFrame {
         Workarea.setBackground(new java.awt.Color(0, 0, 0));
         Workarea.setPreferredSize(new java.awt.Dimension(800, 800));
 
+        lblUber.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 48)); // NOI18N
+        lblUber.setForeground(new java.awt.Color(255, 255, 255));
+        lblUber.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblUber.setText("Uber");
+
+        lblwlcm.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 24)); // NOI18N
+        lblwlcm.setForeground(new java.awt.Color(36, 64, 243));
+        lblwlcm.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblwlcm.setText("Welcome Users!");
+
+        lblintro.setFont(new java.awt.Font("Plantagenet Cherokee", 1, 14)); // NOI18N
+        lblintro.setForeground(new java.awt.Color(210, 10, 9));
+        lblintro.setText("Now You can find your Uber Rides here...");
+
         javax.swing.GroupLayout WorkareaLayout = new javax.swing.GroupLayout(Workarea);
         Workarea.setLayout(WorkareaLayout);
         WorkareaLayout.setHorizontalGroup(
             WorkareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 696, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WorkareaLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblintro)
+                .addGap(35, 35, 35))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WorkareaLayout.createSequentialGroup()
+                .addContainerGap(274, Short.MAX_VALUE)
+                .addGroup(WorkareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WorkareaLayout.createSequentialGroup()
+                        .addComponent(lblUber, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(275, 275, 275))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WorkareaLayout.createSequentialGroup()
+                        .addComponent(lblwlcm)
+                        .addGap(250, 250, 250))))
         );
         WorkareaLayout.setVerticalGroup(
             WorkareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 792, Short.MAX_VALUE)
+            .addGroup(WorkareaLayout.createSequentialGroup()
+                .addGap(238, 238, 238)
+                .addComponent(lblUber, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(98, 98, 98)
+                .addComponent(lblwlcm)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 263, Short.MAX_VALUE)
+                .addComponent(lblintro)
+                .addGap(37, 37, 37))
         );
 
         SplitPane.setRightComponent(Workarea);
@@ -194,5 +233,8 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnCreate;
     private javax.swing.JButton btnSearch;
     private javax.swing.JButton btnView;
+    private javax.swing.JLabel lblUber;
+    private javax.swing.JLabel lblintro;
+    private javax.swing.JLabel lblwlcm;
     // End of variables declaration//GEN-END:variables
 }
